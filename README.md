@@ -1,2 +1,2 @@
 # Ifood
- copia Ifood
+ copia do Ifood
