@@ -20,16 +20,28 @@ html{
 
 /* Menu */
 
-.content{
-   width: 100vw;
-   height: 70px;
-   display: flex;
-   justify-content: space-around; 
-   align-items: center;
-   background-color: #1f1e1f;
-   position: fixed;
-   padding-left: 30rem;
+/* ... Your existing styles ... */
+
+/* Menu */
+header {
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #1f1e1f;
+    position: fixed;
+    /* Consider using percentage or media queries for responsiveness */
+    padding-left: 5%; 
 }
+
+.logo h3 {
+    color: white;
+    font-size: 1.6rem; /* Fix the comma typo */
+}
+
+/* ... Your existing styles ... */
+
 
 .logo{
     width: 70px;
@@ -39,10 +51,6 @@ html{
     align-items: center;
 }
 
-.ligo h3{
-    color: white;
-    font-size: 1,6rem;
-}
 
 .logo img{
     width: 100%;
