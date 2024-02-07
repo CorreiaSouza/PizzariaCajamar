@@ -469,6 +469,87 @@ header {
     }
 }
 
+/*Estilização mobile*/
+
+
+.menu.mobile {
+    background-color: #0000008c;
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 157px;
+    left: 0;
+    width: 100%;
+    height: 0;
+    visibility: hidden;
+    transition: 0.5s;
+    overflow: hidden;
+  }
+  
+  .menu.mobile nav a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 20px 30px;
+    font-size: 16pt;
+  }
+  
+  .menu.mobile nav a:hover {
+    background-color: #68626254;
+  }
+  
+  @media screen and (max-width: 1070px) {
+    .menu.desktop {
+        display: none;
+    }
+  
+    #btn-menu {
+        width: 50px;
+        height: 50px;
+        border: 2px solid #fff;
+        background: transparent;
+        cursor: pointer;
+        outline: none;
+        transition: .2s;
+        display: none;
+    }
+  
+    .linha {
+        width: 40px;
+        height: 5px;
+        background-color: #ccc;
+        display: block;
+        margin: 10px auto;
+        position: relative;
+        transform-origin: center;
+        transition: 0.2s;
+    }
+  
+    #btn-menu.ativar .linha:nth-child(1) {
+        transform: translateY(16px) rotate(-45deg);
+        background-color: red;
+    }
+  
+    #btn-menu.ativar .linha:nth-child(3) {
+        transform: translateY(-16px) rotate(45deg);
+        background-color: red;
+    }
+  
+    #btn-menu.ativar .linha:nth-child(2) {
+        width: 0;
+    }
+  
+    .menu.mobile.abrir {
+        visibility: visible;
+        height: calc(100vh - 157px);
+    }
+  
+    #btn-menu {
+        display: block;
+    }
+  }
+  
+  
+
 
 
 
