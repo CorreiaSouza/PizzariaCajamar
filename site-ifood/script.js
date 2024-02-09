@@ -1,4 +1,4 @@
-const menuDiv = document.getElementById('menu-mobile');
+const menuDiv = document.querySelector('.menu.mobile'); // Alterado para selecionar o elemento corretamente
 const btnAnimar = document.getElementById('btn-menu');
 
 btnAnimar.addEventListener('click', toggleMenu);
